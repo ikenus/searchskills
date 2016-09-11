@@ -1,0 +1,63 @@
+[{
+    "supplier": "Accenture",   
+    "img": "LOGOAccenture.png",
+    "show": "img",
+    "list":[
+        {"title": "Java Development Standard Edition", "date": "Gennaio 2012", "group": ""},
+        {"title": "Coaching in the Workplace", "date": "Luglio 2011", "group": ""},
+        {"title": "Application Analysis", "date": "Febbraio 2010", "group": ""},
+        {"title": "Code Quality", "date": "Dicembre 2009", "group": ""},
+        {"title": "Code Review", "date": "Dicembre 2009", "group": ""},
+        {"title": "Unit Testing", "date": "Giugno 2009", "group": ""},
+        {"title": "Quality and Process Improvement", "date": "Settembre 2006", "group": ""}
+    ]
+},
+{
+    "supplier": "Mohole",    
+    "img": "LOGOMohole.png",
+    "show": "img+supplier",
+    "list":[
+        {"title": "Sviluppare apps per dispositivi mobili con linguaggi web", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "Flash CS5", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "Esportazione progetti AIR per Android e iOS con Flash CS5", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "Accedere all’accelerometro, il GPS, gesture touch, fotocamera, libreria locale", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "SharedObject e SQLLite", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "ActionScript 3.0 orientato al Mobile", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "API Adobe AIR", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "Google Maps for Flash", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "Pubblicazione applicazioni sugli app. Market", "date": "Settembre 2011", "group": "jQuery Mobile"},
+        {"title": "Utilizzo Base e Approfondito di AJAX", "date": "Ottobre 2011", "group": "Javascript Avanzato"},
+        {"title": "Importare contenuti da file esterni", "date": "Ottobre 2011", "group": "Javascript Avanzato"},
+        {"title": "Uso del framework jQuery con AJAX", "date": "Ottobre 2011", "group": "Javascript Avanzato"},
+        {"title": "Interazione con file XML", "date": "Ottobre 2011", "group": "Javascript Avanzato"},
+        {"title": "Integrazione con servizi esterni (Facebook, Flickr, Twitter, Google , ecc..)", "date": "Ottobre 2011", "group": "Javascript Avanzato"},
+        {"title": "Sviluppo Widgets", "date": "Ottobre 2011", "group": "Javascript Avanzato"},
+        {"title": "AJAX e PHP", "date": "Ottobre 2011", "group": "Javascript Avanzato"},
+        {"title": "Concetti avanzati di Web Design", "date": "Novembre 2011", "group": "Corso Avanzato Web Master"},
+        {"title": "Integrazione di servizi esterni", "date": "Novembre 2011", "group": "Corso Avanzato Web Master"},
+        {"title": "Basi di Javascript", "date": "Novembre 2011", "group": "Corso Avanzato Web Master"},
+        {"title": "Basi dei nuovi CSS3 e HTML5", "date": "Novembre 2011", "group": "Corso Avanzato Web Master"},
+        {"title": "Basi di CMS (Cushy CMS, WordPress, joomla)", "date": "Novembre 2011", "group": "Corso Avanzato Web Master"},
+        {"title": "Framework JQuery, JQuery UI, 960gs, MooTools", "date": "Novembre 2011", "group": "Corso Avanzato Web Master"},
+        {"title": "Concetti avanzati di Web Design", "date": "Novembre 2011", "group": "Corso Avanzato Web Master"}
+    ]
+},
+{
+    "supplier": "Softpeople",    
+    "img": "LOGOSoftPeople.png",
+    "show": "img",
+    "list":[
+        {"title": "Programmazione C e C++", "date": "Settemre 2005", "group": "Corso di Formazione d'inserimento"},
+        {"title": "Architettura e comandi di base dell’ambiente di sviluppo Linux", "date": "Settemre 2005", "group": "Corso di Formazione d'inserimento"},
+        {"title": "Programmazione PL/SQL", "date": "Settemre 2005", "group": "Corso di Formazione d'inserimento"},
+        {"title": "Programmazione in Java – Livello Avanzato", "date": "Settemre 2005", "group": "Corso di Formazione d'inserimento"}
+    ]
+},
+{
+    "supplier": "Scuola Superiore (ITIS Facchinetti)",    
+    "img": "",
+    "show": "supplier",
+    "list":[
+        {"title": "Diploma Siper", "date": "2000-2005", "group": "Perito Informatico Industriale (Progetto ABACUS)"}
+    ]
+}]
