@@ -35,11 +35,11 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-group" id="corsielenco">
-                    <li class="list-group-item" ng-repeat="supplier in corsi" data-toggle="collapse" data-parent="#corsielenco" href="#elenco-{{$index}}" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="badge">{{supplier.list.length}}</span>{{supplier.name}}
+                    <li class="list-group-item" ng-repeat="Education in corsi" data-toggle="collapse" data-parent="#corsielenco" href="#elenco-{{$index}}" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="badge">{{Education.Activities.detail.length}}</span>{{Education.Title}}
                         <div id="elenco-{{$index}}" class="panel-collapse collapse">
-                            <ul ng-repeat="c in supplier.list">
-                                <li>{{c.title}} {{c.date}} {{c.group}}</li>
+                            <ul ng-repeat="d in Education.Activities.detail">
+                                <li>{{d}}</li>
                             <ul>
                         </div>
                     </li>
