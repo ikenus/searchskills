@@ -1,6 +1,11 @@
 var app = angular.module("app", []);
 
-app.controller('main', ['$scope', function($scope){
+app.controller('main', ['$scope', '$http', function($scope, $http){
+
+    $http.get('./json/courses.json').then(function(response){
+
+        $scope.corsi = response.data;
+    });
 
 
     $scope.clients = [{
@@ -17,5 +22,6 @@ app.controller('main', ['$scope', function($scope){
         last: 'Grant'
     }];
     $scope.info = "Prova";
+
 
 }]);
