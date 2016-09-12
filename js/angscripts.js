@@ -8,7 +8,7 @@ app.controller('main', ['$scope', '$http', function($scope, $http){
         $scope.exps = response.data;
 
         //From  / To
-        $scope.exps.from = response.data.Period.From._day+"/"+response.data.Period.From._month+"/"+response.data.Period.From._year;
+        $scope.exps.from = ;
         $scope.exps.to = response.data.Period.Current == "true" ? "Oggi" : response.data.Period.To._day+"/"+response.data.Period.To._month+"/"+response.data.Period.To._year;
     });    
     // Corsi
