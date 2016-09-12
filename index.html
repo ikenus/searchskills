@@ -16,6 +16,23 @@
 <body ng-controller="main" ng-cloak>
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <div ng-repeat="e in exps">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{e.Employer.Name}} ({{e.Period.From._day}}/{{e.Period.From._month}}/{{e.Period.From._year}} - <span ng-if="e.Period.Current=='true'">Oggi</span><span ng-if="e.Period.Current!=='true'">{{e.Period.To._day}}/{{e.Period.To._month}}/{{e.Period.To._year}}</span> )</h3> 
+                        </div>
+                        <div class="panel-body"> 
+                            <h4>{{e.Position.Label}}</h4>
+                            <ul ng-repeat="acts in e.Activities.ul.li">
+                                <li>{{acts}}</li>
+                            </ul>
+                        </div>                                                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-8">
                 <input type="text" placeholder="Cerca" ng-model="filtro">
                 <table class="table table-striped">
@@ -34,6 +51,7 @@
                 </table>
             </div>
             <div class="col-md-4">
+                <div class="list-group-item active">Corsi</div>
                 <ul class="list-group" id="corsielenco">
                     <li class="list-group-item" ng-repeat="Education in corsi" data-toggle="collapse" data-parent="#corsielenco" href="#elenco-{{$index}}" aria-expanded="true" aria-controls="collapseOne">
                         <span class="badge">{{Education.Activities.detail.length}}</span>{{Education.Title}}

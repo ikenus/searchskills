@@ -2,6 +2,16 @@ var app = angular.module("app", []);
 
 app.controller('main', ['$scope', '$http', function($scope, $http){
 
+    //Experienze
+    $http.get('./json/exps.json').then(function(response){
+
+        $scope.exps = response.data;
+
+        //From  / To
+        $scope.exps.from = response.data.Period.From._day+"/"+response.data.Period.From._month+"/"+response.data.Period.From._year;
+        $scope.exps.to = response.data.Period.Current == "true" ? "Oggi" : response.data.Period.To._day+"/"+response.data.Period.To._month+"/"+response.data.Period.To._year;
+    });    
+    // Corsi
     $http.get('./json/courses.json').then(function(response){
 
         $scope.corsi = response.data;

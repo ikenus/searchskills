@@ -1,0 +1,104 @@
+[
+    {
+        "Period": {
+            "From": {
+                "_day": "01",
+                "_month": "06",
+                "_year": "2012"
+            },
+            "Current": "true"
+        },
+        "Position": {
+            "Code": "21310",
+            "Label": "Progettista ed analista di sistemi informatici"
+        },
+        "Activities": {
+            "ul": {
+                "li": [
+                    "Fronted Developer: Design e sviluppo di interfaccie grafiche. sviluppo Cross Browser, anche con browser molto vecchi",
+                    "Integrazione con diversi sistemi informativi per la produzione di dati e soluzioni",
+                    "UX Design: Analisi delle richieste dell'ufficio marketing per definire aspetto e funzionamento delle applicazioni web future",
+                    "Attività di ricerca e sviluppo sulle nuove tecnologie web affinchè possano essere usate nelle app in costruzione",
+                    "Unit test approfondito su progetti propri e di altre divisioni​",
+                    "Middleware Developer: Sviluppo services J2EE (Spring  Velocity Apache)"
+                ]
+            }
+        },
+        "Employer": {
+            "Name": "FinecoBank S.p.a.",
+            "ContactInfo": {
+                "Address": {
+                    "Contact": {
+                        "Municipality": "Milano",
+                        "Country": {
+                            "Code": "IT",
+                            "Label": "Italia"
+                        }
+                    }
+                },
+                "Website": {
+                    "Contact": "www.fineco.it",
+                    "Use": {
+                        "Code": "business"
+                    }
+                }
+            },
+            "Sector": {
+                "Code": "K",
+                "Label": "Attività finanziarie e assicurative"
+            }
+        }
+    },
+    {
+        "Period": {
+            "From": {
+                "_day": "18",
+                "_month": "11",
+                "_year": "2005"
+            },
+            "To": {
+                "_day": "01",
+                "_month": "06",
+                "_year": "2012"
+            },
+            "Current": "false"
+        },
+        "Position": {
+            "Label": "Analyst Programmer"
+        },
+        "Activities": {
+            "ul": {
+                "li": [
+                    "Analista Programmatore dell'ERP JD Edwards Enterprise",
+                    "Sviluppo ed analisi tecniche per la realizzazione di soluzioni software adatte alle esigenze del cliente",
+                    "Gestione Clienti e Interventi tecnici sul modello Application Maintenance",
+                    "Analisi delle richieste dei clienti e stesura reports per analizzare punti critici e offerta del servizio Application Maintenance",
+                    "Collaborazione con tutti gli uffici dei clienti (Ufficio contabilità, amminstrazione, IT, Logistica) per la ricerca di soluzioni funzionali e tecniche alle loro necessità, sempre nell'ambito JDEdwards"
+                ]
+            }
+        },
+        "Employer": {
+            "Name": "Accenture S.p.a.",
+            "ContactInfo": {
+                "Address": {
+                    "Contact": {
+                        "Municipality": "Milano",
+                        "Country": {
+                            "Code": "IT",
+                            "Label": "Italia"
+                        }
+                    }
+                },
+                "Website": {
+                    "Contact": "www.accenture.com",
+                    "Use": {
+                        "Code": "business"
+                    }
+                }
+            },
+            "Sector": {
+                "Label": "Consulenza"
+            }
+        }
+    }
+]
