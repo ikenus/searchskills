@@ -13,27 +13,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="js/angscripts.js"></script>    
 </head>
-<body ng-controller="main" ng-cloak>
+<body ng-controller="main" ng-cloak style="position:relative;" data-spy="scroll" data-target="#navigation-barre">
     <div class="container">
+        <div id="navigation-barre" style="position:fixed; top:0; z-index:1000; width:100%; background: white;">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#presentazione">Mi Presento</a></li>
+                <li role="presentation"><a href="#esperienze">Esperienze</a></li>
+                <li role="presentation"><a href="#contenutomisto">Qualcosa</a></li>
+                <li role="presentation"><a href="#formazione">Formazione</a></li>
+            </ul>    
+        </div>
+        <div style="margin-top: 50px"></div>
         <div class="row">
-            <div class="col-md-12">
-                <div ng-repeat="e in exps">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">{{e.Employer.Name}} ({{e.Period.From._day}}/{{e.Period.From._month}}/{{e.Period.From._year}} - <span ng-if="e.Period.Current=='true'">Oggi</span><span ng-if="e.Period.Current!=='true'">{{e.Period.To._day}}/{{e.Period.To._month}}/{{e.Period.To._year}}</span> )</h3> 
-                        </div>
-                        <div class="panel-body"> 
-                            <h4>{{e.Position.Label}}</h4>
-                            <ul ng-repeat="acts in e.Activities.ul.li">
-                                <li>{{acts}}</li>
-                            </ul>
-                        </div>                                                
-                    </div>
-                </div>
+            <div class="col-md-12" id="presentazione">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac auctor nisi. Nulla facilisis turpis semper, molestie turpis quis, dictum mi. Vestibulum in metus finibus, feugiat magna nec, sollicitudin sapien. Donec dui elit, feugiat ut pellentesque sed, egestas eu nulla. Praesent ut imperdiet augue, ut fermentum lorem. Sed efficitur ligula vitae elit molestie, in tempus quam imperdiet. Maecenas at ligula quis tellus sodales accumsan et ac sem. Vestibulum eget blandit nisl. Ut erat metus, tincidunt eget ultricies id, cursus et tortor.
+                <br><br>
+                Quisque id venenatis nunc, ac porta mi. Pellentesque quis aliquam dui. Nullam eu ante eleifend, gravida dui sit amet, volutpat ligula. Suspendisse sodales, metus sit amet fringilla interdum, libero augue efficitur neque, feugiat pretium sapien orci eu diam. Pellentesque facilisis arcu scelerisque nunc malesuada, ac pellentesque ex gravida. Phasellus laoreet vitae dui ac consectetur. Nulla finibus malesuada blandit. Aenean congue elementum facilisis. Ut auctor semper euismod. Suspendisse sit amet arcu a mi suscipit sollicitudin. Sed in lectus iaculis, malesuada quam eget, efficitur urna. Morbi euismod nulla est, eget finibus turpis suscipit maximus. Vivamus gravida dolor vel dapibus ultrices. Mauris at suscipit lectus. Nulla efficitur quis elit eget pulvinar.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12" ng-repeat="e in exps" id="esperienze">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{e.Employer.Name}} ({{e.Period.From._day}}/{{e.Period.From._month}}/{{e.Period.From._year}} - <span ng-if="e.Period.Current=='true'">Oggi</span><span ng-if="e.Period.Current!=='true'">{{e.Period.To._day}}/{{e.Period.To._month}}/{{e.Period.To._year}}</span> )</h3> 
+                    </div>
+                    <div class="panel-body"> 
+                        <h4>{{e.Position.Label}}</h4>
+                        <ul ng-repeat="acts in e.Activities.ul.li">
+                            <li>{{acts}}</li>
+                        </ul>
+                    </div>                                                
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" id="contenutomisto">
                 <input type="text" placeholder="Cerca" ng-model="filtro">
                 <table class="table table-striped">
                     <thead>
@@ -50,7 +66,9 @@
                     </tbody>        
                 </table>
             </div>
-            <div class="col-md-4">
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="formazione">
                 <div class="list-group-item active">Corsi</div>
                 <ul class="list-group" id="corsielenco">
                     <li class="list-group-item" ng-repeat="Education in corsi" data-toggle="collapse" data-parent="#corsielenco" href="#elenco-{{$index}}" aria-expanded="true" aria-controls="collapseOne">
