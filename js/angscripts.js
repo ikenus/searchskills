@@ -7,9 +7,6 @@ app.controller('main', ['$scope', '$http', function($scope, $http){
 
         $scope.exps = response.data;
 
-        //From  / To
-        $scope.exps.from = ;
-        $scope.exps.to = response.data.Period.Current == "true" ? "Oggi" : response.data.Period.To._day+"/"+response.data.Period.To._month+"/"+response.data.Period.To._year;
     });    
     // Corsi
     $http.get('./json/courses.json').then(function(response){
